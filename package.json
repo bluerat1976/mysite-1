@@ -1,0 +1,23 @@
+{
+  "name": "mysite-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --output-style compressed styles.scss > style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluerat1976/mysite-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluerat1976/mysite-1/issues"
+  },
+  "homepage": "https://github.com/bluerat1976/mysite-1#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

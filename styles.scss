@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@import 'styles/mixins' ;
+body {
+    padding: 14px;
+}
+#hd {
+    display: flex;
+    flex-flow:  row wrap;
+    padding-top: 20px;
+    
+    #box-logo {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 1 15%;
+        height: 80px;
+    }
+
+    .box-nav {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 1 80%;
+        justify-content: center;
+        text-align: center;
+            
+        li {
+            list-style-type: none;
+        
+           #uppnav1 {
+           @include upp-menu;
+           
+           }
+           #uppnav2 {
+            @include upp-menu;   
+            
+               
+            }
+
+           #uppnav3 {
+                @include upp-menu;
+               
+            }
+
+            #uppnav4 {
+                @include upp-menu;
+               
+            }
+
+            #uppnav5 {
+                @include upp-menu;
+               
+            }
+
+            #uppnav6 {
+                @include upp-menu;
+                
+            }
+
+            #uppnav1:hover, 
+            #uppnav2:hover, 
+            #uppnav3:hover, 
+            #uppnav4:hover, 
+            #uppnav5:hover, 
+            #uppnav6:hover {
+                opacity: 1;
+            } 
+        }
+    }
+   
+
+    #pict-logo {
+        max-width: 180px;
+    }
+
+}
+
+
+
+
+
