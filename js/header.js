@@ -4,7 +4,7 @@ let header = document.getElementById('hd')
 let boxlogo = document.getElementById('box-logo')
 
 let logo = document.createElement('h3')
-logo.innerHTML = `Blin\nHernia\nI drugaia\n Driani`
+logo.innerHTML = `Blin\nHernia`
 boxlogo.appendChild(logo)
 
 let logopict = document.createElement('img')
