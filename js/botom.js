@@ -4,6 +4,9 @@ let listBotom = document.getElementById('listbotom')
 
 botom.appendChild(listBotom)
 
+
+//------------------------------------------------------
+
 let listBotomItem1 = document.createElement('li')
 listBotomItem1.setAttribute('id', 'bot-nav1-item')
 listBotom.appendChild(listBotomItem1)
@@ -15,17 +18,7 @@ listBotomLink1.innerHTML = 'Home'
 listBotomItem1.appendChild(listBotomLink1)
 
 
-
-let listBotomItem2 = document.createElement('li')
-listBotomItem2.setAttribute('id', 'bot-nav2-item')
-listBotom.appendChild(listBotomItem2)
-
-let listBotomLink2 = document.createElement('a')
-listBotomLink2.setAttribute('id', 'bot-nav2' )
-listBotomLink2.setAttribute('href', '###')
-listBotomLink2.innerHTML = 'Tehnology'
-listBotomItem2.appendChild(listBotomLink2)
-
+//------------------------------------------------------
 
 let listBotomItem3 = document.createElement('li')
 listBotomItem3.setAttribute('id', 'bot-nav3-item')
@@ -38,6 +31,8 @@ listBotomLink3.innerHTML = 'About me'
 listBotomItem3.appendChild(listBotomLink3)
 
 
+//------------------------------------------------------
+
 let listBotomItem4 = document.createElement('li')
 listBotomItem4.setAttribute('id', 'bot-nav4-item')
 listBotom.appendChild(listBotomItem4)
@@ -49,6 +44,8 @@ listBotomLink4.innerHTML = 'Portfolio'
 listBotomItem4.appendChild(listBotomLink4)
 
 
+//------------------------------------------------------
+
 let listBotomItem5 = document.createElement('li')
 listBotomItem5.setAttribute('id', 'bot-nav5-item')
 listBotom.appendChild(listBotomItem5)
@@ -59,6 +56,8 @@ listBotomLink5.setAttribute('href', '#########')
 listBotomLink5.innerHTML = 'Blog'
 listBotomItem5.appendChild(listBotomLink5)
 
+
+//------------------------------------------------------
 
 let listBotomItem6 = document.createElement('li')
 listBotomItem6.setAttribute('id', 'bot-nav6-item')
