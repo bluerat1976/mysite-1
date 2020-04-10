@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#hd {
+    display: flex;
+    flex-flow:  row nowrap;
+    border-bottom: 2px solid #006b95; 
+    /*background:linear-gradient(#e2e3e4, #314458) ;*/
+    
+    #box-logo {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 10%;
+
+        h3 {
+            display: inline-block;
+            flex: 1 1 100px;
+            font-size: 24px;
+            padding: 18px; 
+            color: #ffffff;
+            background-color: #006b95; 
+        }
+
+        #pict-logo {
+            max-width: 96%;
+            flex: 1 1 150px; 
+        }
+    }
+
+    #box-nav {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 1 74%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+            
+           a {
+                @include upp-menu;
+           }
+
+            a:hover {
+                opacity: 0.5;
+            } 
+        
+        
+    }
+}
+
+
+
+
