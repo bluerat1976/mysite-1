@@ -13,21 +13,21 @@
     #box-logo {
         display: flex;
         flex-flow: row nowrap;
-        flex: 1 1 10%;
+        flex: 1 1 6%;
 
         h3 {
             display: inline-block;
-            flex: 1 1 100px;
-            font-size: 24px;
-            padding: 18px; 
+            flex: 1 1 60px;
+            font-size: 20px;
+            padding: 10px; 
             color: #ffffff;
             background-color: #006b95; 
             text-align: center;
         }
 
         #pict-logo {
-            max-width: 96%;
-            flex: 1 1 150px; 
+            max-width: 100%;
+            
             border: 2px solid #006b95;
         }
     }
@@ -40,17 +40,27 @@
         text-align: center;
         align-items: center;
             
-           a {
+            a {
                 @include upp-menu;
-           }
+            }
 
             a:hover {
                 opacity: 0.5;
             } 
-        
-        
+
+            #page-home & #uppnav1,
+            #page-aboutme & #uppnav2,
+            #page-portfolio & #uppnav3,
+            #page-blog & #uppnav4, 
+            #page-cv & #uppnav5 {
+                color:#d18904;
+                text-shadow: 2px 2px 2px #d3d3d3;
+            }
     }
 }
+
+
+
 
 
 
