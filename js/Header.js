@@ -3,7 +3,7 @@ let header = document.getElementById('hd')
 let boxlogo = document.getElementById('box-logo')
 
 let logo = document.createElement('h3')
-logo.innerHTML = `Blin\nFignia`
+logo.innerHTML = `Montenegro\n *** \<br>Drunk Сorner`
 boxlogo.appendChild(logo)
 
 let logopict = document.createElement('img')
