@@ -1,0 +1,47 @@
+
+.pict {
+    max-width: 300px;
+    margin: 6px;
+    padding: 4px;
+    border: 2px solid #cccccc;
+    transition: all 0.3s linear 0s;
+    z-index: 1;
+    background: #FFFFFF;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    margin: 6px auto;
+    display: block;
+}
+
+.pict:hover {
+    cursor:pointer;
+    box-shadow: 0 0 5px 5px #eee;
+    border: 1px solid #25A0E3;
+    z-index: 10;
+    transition: all 0.2s linear 0.3s;
+}
+
+
+
+.right:hover {
+    transform:scale(2) translate(-90px, 30px);
+   
+}
+
+.left:hover {
+    transform:scale(2) translate(90px, 30px);
+    
+}
+
+.center:hover {
+    transform: scale(2);
+}
