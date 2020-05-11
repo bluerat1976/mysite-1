@@ -4,10 +4,11 @@
     margin: 6px;
     padding: 4px;
     border: 2px solid #cccccc;
-    transition: all 0.3s linear 0s;
-    z-index: 1;
     background: #FFFFFF;
 }
+/*   z-index: 1; 
+    transition: all 0.3s linear 0s;
+*/
 
 .right {
     float: right;
@@ -25,11 +26,10 @@
 .pict:hover {
     cursor:pointer;
     box-shadow: 0 0 5px 5px #eee;
-    border: 1px solid #25A0E3;
-    z-index: 10;
+    border: 1px solid rgb(74, 81, 85);
     transition: all 0.2s linear 0.3s;
 }
-
+/*   z-index: 10; */
 
 
 .right:hover {
