@@ -1,5 +1,6 @@
 
-//import Header from 'js/header.js'
+import 'Header.js';
+import 'Bottom.js';
 
 
 

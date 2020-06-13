@@ -1,5 +1,22 @@
 #botom {
     display: flex;
     flex-flow: row wrap;
-    background-color: #055e64;
-}
+    background-color: #003750;
+    padding: 10px 60px;
+    margin: 30px 0 0 0;
+    #listbotom li  {
+        list-style: none;
+        display: inline-block;
+        margin: 6px;
+        
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #f5ed79;
+        }
+    }
+
+} 
