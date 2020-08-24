@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/bluerat1976/mysite-1#readme",
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.14.1"
   }
 }

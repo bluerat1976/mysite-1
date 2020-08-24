@@ -2,12 +2,12 @@ let header = document.getElementById('hd')
 
 let boxlogo = document.getElementById('box-logo')
 
-let logo = document.createElement('h3')
-logo.innerHTML = `Montenegro\n *** \<br>Drunk Сorner`
-boxlogo.appendChild(logo)
+//let logo = document.createElement('h3')
+//logo.innerHTML = 'Это я'
+//boxlogo.appendChild(logo)
 
 let logopict = document.createElement('img')
-logopict.setAttribute('src', 'picts/upmenu/upmenu-9.jpg')
+logopict.setAttribute('src', 'picts/logo/logo-7.jpg')
 logopict.setAttribute('id', 'pict-logo')
 boxlogo.appendChild(logopict)
 
