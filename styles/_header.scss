@@ -6,23 +6,27 @@
 
 #hd {
     display: flex;
-    flex-flow:  row nowrap;
+    flex-flow: row wrap;
     border-bottom: 2px solid #2c3b41; 
     /*background:linear-gradient(#e2e3e4, #314458) ;*/
-    padding-left: 5%;
-    
+    background-image: url(picts/upmenu/up-background-11.jpg);
+    background-size: cover;
+    height: 400px;
+  
+ 
     #box-logo {
         display: flex;
         flex-flow: row nowrap;
         flex: 1 1 12%;
+        align-items: flex-start;
 
         h3 {
             display: inline-block;
-            flex: 1 1 60px;
-            font-size: 40px;
+            font-size: 32px;
             padding: 10px; 
-            color: #000000;
-            text-align: center;
+            color: #ffe986;
+            text-align: left;
+            border: 1px solid #ffe986;
         }
 
         #pict-logo {
@@ -30,16 +34,39 @@
         }
     }
 
-    #box-nav {
+    #nav-info {
         display: flex;
         flex-flow: row wrap;
-        flex: 1 1 74%;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-            
+        flex: 1 1 70%;
+    
+        #box-info {
+            display: flex;
+            flex-flow: row wrap;
+            flex: 1 1 74%;
+            justify-content: center;
+            align-items: flex-start;
+
+
+            p {
+                color: #afafaf;
+                font-size: 14px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding: 16px;
+                border: 1px solid #d8d8d8;
+            }
+        }
+   
+        #box-nav {
+            display: flex;
+            flex-flow: row wrap;
+            flex: 1 1 74%;
+            justify-content: center;
+            align-items: flex-end;
+           
             a {
                 @include upp-menu;
+                border: 1px solid #afafaf;
+        
             }
 
             a:hover {
@@ -51,12 +78,17 @@
             #page-portfolio & #uppnav3,
             #page-blog & #uppnav4, 
             #page-cv & #uppnav5 {
-                color:#cf2e51;
-                text-shadow: 1px 1px 1px #d3d3d3;
-                border-bottom: 2px solid #cf2e51;
+                color: #ffe986;
+                text-shadow: 1px 2px #000000;
             }
+
+        }  
     }
-}
+
+    
+}  
+
+
 
 
 

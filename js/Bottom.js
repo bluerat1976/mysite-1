@@ -56,8 +56,7 @@ listBotomLink5.setAttribute('href', '#########')
 listBotomLink5.innerHTML = 'Blog'
 listBotomItem5.appendChild(listBotomLink5)
 
-
-//------------------------------------------------------
+//---------------------------------------------------
 
 let listBotomItem6 = document.createElement('li')
 listBotomItem6.setAttribute('id', 'bot-nav6-item')
@@ -68,3 +67,15 @@ listBotomLink6.setAttribute('id', 'bot-nav6' )
 listBotomLink6.setAttribute('href', '################')
 listBotomLink6.innerHTML = 'CV'
 listBotomItem6.appendChild(listBotomLink6)
+
+//------------------------------------------------------
+
+let listBotomItem7 = document.createElement('li')
+listBotomItem7.setAttribute('id', 'bot-nav7-item')
+listBotom.appendChild(listBotomItem7)
+
+let listBotomLink7 = document.createElement('a')
+listBotomLink7.setAttribute('id', 'bot-nav7' )
+listBotomLink7.setAttribute('href', '#########')
+listBotomLink7.innerHTML = 'Contacts'
+listBotomItem7.appendChild(listBotomLink7)

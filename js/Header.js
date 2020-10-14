@@ -1,17 +1,19 @@
 let header = document.getElementById('hd')
+let upperNav = document.getElementById('nav-info')
 
 let boxlogo = document.getElementById('box-logo')
 
-//let logo = document.createElement('h3')
-//logo.innerHTML = 'Это я'
-//boxlogo.appendChild(logo)
+let logo = document.createElement('h3')
+logo.innerHTML = 'Deghent' + '<br>' + 'Design'
+boxlogo.appendChild(logo)
 
-let logopict = document.createElement('img')
-logopict.setAttribute('src', 'picts/logo/logo-7.jpg')
-logopict.setAttribute('id', 'pict-logo')
-boxlogo.appendChild(logopict)
 
-header.appendChild(boxlogo)
+// let logopict = document.createElement('img')
+// logopict.setAttribute('src', 'picts/upmenu/upmenu-1.jpg')
+// logopict.setAttribute('id', 'pict-logo')
+// boxlogo.appendChild(logopict)
+
+// header.appendChild(boxlogo)
 
 
 
@@ -40,6 +42,7 @@ let uppermenu = [
     new UpperMenuItem('uppnav2', 'About me', 'aboutme.html'),
     new UpperMenuItem('uppnav3', 'Portfolio', 'portfolio.html'),
     new UpperMenuItem('uppnav4', 'Blog', 'blog.html'),
+    new UpperMenuItem('uppnav4', 'Contacts', 'contacts.html'),
     new UpperMenuItem('uppnav5', 'CV', 'cv.html'),
 ]
 
@@ -49,9 +52,9 @@ function renderUpNav() {
     uppermenu.forEach( 
         menulist => wrapper.appendChild(menulist.render())
     ) 
-    header.appendChild(wrapper)
+    upperNav.appendChild(wrapper)
 }
 
-renderUpNav('#box-nav')
+renderUpNav('#apperNav')
 
 
