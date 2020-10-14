@@ -1,4 +1,6 @@
-let header = document.getElementById('hd')
+//let header = document.getElementById('hd')
+
+
 let upperNav = document.getElementById('nav-info')
 
 let boxlogo = document.getElementById('box-logo')
@@ -16,8 +18,78 @@ boxlogo.appendChild(logo)
 // header.appendChild(boxlogo)
 
 
+//------------- Falling menu creation-------------------------------
 
-//--------------------------------------------------
+let dropdownbox = document.createElement('div');
+dropdownbox.setAttribute('id', 'dropdown');
+boxlogo.appendChild(dropdownbox);
+
+boxlogo.appendChild(dropdownbox);
+
+let menubutton = document.createElement('button');
+menubutton.setAttribute('id','menu-button');
+menubutton.innerHTML = 'Menu';
+dropdownbox.appendChild(menubutton);
+
+let dropdownShow = document.createElement('div');
+dropdownShow.setAttribute('id', 'fall-menu');
+dropdownbox.appendChild(dropdownShow);
+
+class dropdownLink {
+    constructor(name, href) {
+        this.name = name;
+        this.href = href;
+    };
+
+    render() {
+        let linkmenu = document.createElement('a');
+        linkmenu.setAttribute('href', this.href);
+        linkmenu.innerHTML = this.name;
+
+        return linkmenu
+    }
+}
+
+let dropdownMenu = [
+    new dropdownLink('Home', 'index.html' ),
+    new dropdownLink('About me', 'aboutme.html'),
+    new dropdownLink('Portfolio', 'portfolio.html'),
+    new dropdownLink('Blog', 'blog.html'),
+    new dropdownLink('Contacts', 'contacts.html'),
+    new dropdownLink('CV', 'cv.html'),
+]
+
+function renderDropMenu() {
+    let wrapper = document.getElementById('fall-menu');
+
+    dropdownMenu.forEach( 
+        dropdownlist => wrapper.appendChild(dropdownlist.render())
+    ) 
+
+    dropdownbox.appendChild(wrapper);
+}
+
+renderDropMenu('#dropdownbox');
+
+
+
+//let fallmenubutton = document.getElementById('menu-button');
+menubutton.addEventListener('click', fallingMenuCreate);
+let showElement = document.getElementById('fall-menu');
+function fallingMenuCreate() {
+  
+    showElement.style.display = 'block';
+
+}
+
+function fallingMenuHide() {
+    showElement.style.display = 'block';
+}
+
+
+//--------------------------------------------------------------------------
+//----------Main upper menu creation----------------------------------------
+
 class UpperMenuItem {
     constructor(id, name, href) {
         this.id = id
@@ -35,7 +107,7 @@ class UpperMenuItem {
     }
 }
 
-//-------------------------
+//----------------------------------------
 
 let uppermenu = [
     new UpperMenuItem('uppnav1', 'Home', 'index.html'),

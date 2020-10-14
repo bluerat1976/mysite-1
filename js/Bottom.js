@@ -1,3 +1,4 @@
+
 let botom = document.getElementById('botom')
 
 let listBotom = document.getElementById('listbotom')
@@ -77,5 +78,6 @@ listBotom.appendChild(listBotomItem7)
 let listBotomLink7 = document.createElement('a')
 listBotomLink7.setAttribute('id', 'bot-nav7' )
 listBotomLink7.setAttribute('href', '#########')
-listBotomLink7.innerHTML = 'Contacts'
-listBotomItem7.appendChild(listBotomLink7)
+listBotomLink7.innerHTML = 'Contacts';
+listBotomItem7.appendChild(listBotomLink7);
+
