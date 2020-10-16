@@ -33,6 +33,7 @@ dropdownbox.appendChild(menubutton);
 
 let dropdownShow = document.createElement('div');
 dropdownShow.setAttribute('id', 'fall-menu');
+dropdownShow.setAttribute('class', 'dropdown-hide')
 dropdownbox.appendChild(dropdownShow);
 
 class dropdownLink {
@@ -74,15 +75,18 @@ renderDropMenu('#dropdownbox');
 
 
 //let fallmenubutton = document.getElementById('menu-button');
-menubutton.addEventListener('click', fallingMenuCreate);
-let showElement = document.getElementById('fall-menu');
-function fallingMenuCreate() {
-  
-    showElement.style.display = 'block';
+
+menubutton.addEventListener('click', showMenu);
+
+let element = document.getElementById('fall-menu');
+function showMenu() {
+    
+    element.classList.toggle('dropdown-show');
+    element.classList.toggle('dropdown-hide');
 
 }
 
-function fallingMenuHide() {
+function hideMenu() {
     showElement.style.display = 'block';
 }
 

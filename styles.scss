@@ -7,9 +7,18 @@ body {
     padding: 10px 0 0 0;
 
     .content{
-        padding-top: 30px;
-        text-align: center;
+        padding: 30px;
        
+        h1 {
+            margin-bottom: 40px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+        }
+
         .quote {
             font-size: 18px;
         }

@@ -1,0 +1,52 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 20px; 
+    margin-bottom: 140px;
+}
+.drop-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.drop-menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+}
+
+.drop-menu ul li { 
+    border: 1px solid #cccccc;
+}
+
+.drop-menu ul li a {
+   display: block;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    padding: 15px 14px;
+    color: #0a0c0e;
+    font-size: 20px;
+}
+
+.drop-menu ul li a .add-menu{
+    display: block;
+   
+}
+
+.drop-menu ul li a .add-menu li {
+    display: block;
+}
+
+li a svg {
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    color: black;
+}
+
