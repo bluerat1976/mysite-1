@@ -1,0 +1,19 @@
+
+#lang {
+    background-color: #f2fcc9;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.show {
+   display: inline-block; 
+   margin: 10px;
+}

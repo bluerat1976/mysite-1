@@ -1,5 +1,7 @@
 //let header = document.getElementById('hd')
 
+//const { info } = require("node-sass")
+
 
 let upperNav = document.getElementById('nav-info')
 
@@ -16,6 +18,53 @@ boxlogo.appendChild(logo)
 // boxlogo.appendChild(logopict)
 
 // header.appendChild(boxlogo)
+
+
+
+
+
+//--------------------------------------------------------------------------
+//----------Main upper menu creation----------------------------------------
+
+class UpperMenuItem {
+    constructor(id, name, href) {
+        this.id = id
+        this.name = name
+        this.href = href
+    }
+
+    render() {
+        let linkUpNav = document.createElement('a')
+        linkUpNav.setAttribute ('id', this.id)
+        linkUpNav.setAttribute('href', this.href)
+        linkUpNav.innerText = this.name
+
+        return linkUpNav
+    }
+}
+
+//----------------------------------------
+
+let uppermenu = [
+    new UpperMenuItem('uppnav1', 'Home', 'index.html'),
+    new UpperMenuItem('uppnav2', 'About me', 'aboutme.html'),
+    new UpperMenuItem('uppnav3', 'Portfolio', 'portfolio.html'),
+    new UpperMenuItem('uppnav4', 'Blog', 'blog.html'),
+    new UpperMenuItem('uppnav4', 'Contacts', 'contacts.html'),
+    new UpperMenuItem('uppnav5', 'CV', 'cv.html'),
+]
+
+function renderUpNav() {
+    let wrapper = document.getElementById('box-nav');
+
+    uppermenu.forEach( 
+        menulist => wrapper.appendChild(menulist.render())
+    ) 
+    upperNav.appendChild(wrapper);
+}
+
+renderUpNav('#apperNav');
+
 
 
 //------------- Falling menu creation-------------------------------
@@ -66,12 +115,10 @@ function renderDropMenu() {
     dropdownMenu.forEach( 
         dropdownlist => wrapper.appendChild(dropdownlist.render())
     ) 
-
     dropdownbox.appendChild(wrapper);
 }
 
 renderDropMenu('#dropdownbox');
-
 
 
 //let fallmenubutton = document.getElementById('menu-button');
@@ -79,58 +126,28 @@ renderDropMenu('#dropdownbox');
 menubutton.addEventListener('click', showMenu);
 
 let element = document.getElementById('fall-menu');
-function showMenu() {
-    
+function showMenu() { 
     element.classList.toggle('dropdown-show');
     element.classList.toggle('dropdown-hide');
-
-}
-
-function hideMenu() {
-    showElement.style.display = 'block';
 }
 
 
-//--------------------------------------------------------------------------
-//----------Main upper menu creation----------------------------------------
+//------------Info header creation--------------------
 
-class UpperMenuItem {
-    constructor(id, name, href) {
-        this.id = id
-        this.name = name
-        this.href = href
-    }
 
-    render() {
-        let linkUpNav = document.createElement('a')
-        linkUpNav.setAttribute ('id', this.id)
-        linkUpNav.setAttribute('href', this.href)
-        linkUpNav.innerText = this.name
+let boxInfoHeader = document.getElementById('box-info-header');
 
-        return linkUpNav
-    }
-}
 
-//----------------------------------------
+let infoHead = document.createElement('p');
+infoHead.setAttribute('class', 'info-header');
+infoHead.innerHTML = '+373 (0) 78318392' + ' ' + ' --- ' + ' ' + 'lisadeghent@gmail.com';
+boxInfoHeader.appendChild(infoHead);
 
-let uppermenu = [
-    new UpperMenuItem('uppnav1', 'Home', 'index.html'),
-    new UpperMenuItem('uppnav2', 'About me', 'aboutme.html'),
-    new UpperMenuItem('uppnav3', 'Portfolio', 'portfolio.html'),
-    new UpperMenuItem('uppnav4', 'Blog', 'blog.html'),
-    new UpperMenuItem('uppnav4', 'Contacts', 'contacts.html'),
-    new UpperMenuItem('uppnav5', 'CV', 'cv.html'),
-]
 
-function renderUpNav() {
-    let wrapper = document.getElementById('box-nav')
+//----------------Language change elements creation----------------
 
-    uppermenu.forEach( 
-        menulist => wrapper.appendChild(menulist.render())
-    ) 
-    upperNav.appendChild(wrapper)
-}
 
-renderUpNav('#apperNav')
+
+
 
 
