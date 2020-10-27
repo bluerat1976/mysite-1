@@ -31,27 +31,60 @@
 //     this.style.display = 'none';
 // };
 
-//document.getElementById('lang').addEventListener('click', funk);
+document.getElementById('lang').addEventListener('click', funkSwitch);
 
-document.getElementById('en').addEventListener('click', funkEn);
+//document.getElementById('lan').addEventListener('click', funkSwitch);
 
+//document.getElementById('ru').addEventListener('click', funkRu);
 
-document.getElementById('ru').addEventListener('click', funkRu);
+function funkSwitch(event) {
+    console.log(event.target);
+    console.log(event.target.id);
+    let enbox = document.getElementsByClassName('en');
+    let rubox = document.getElementsByClassName('ru');
 
- let enbox = document.getElementsByClassName('en');
- let rubox = document.getElementsByClassName('ru');
+    if(event.target.id == 'en') {
+       
+        for(let i = 0; i < enbox.length; i++) {
+            console.log(enbox[i])//rubox[i].classList.toggle('hidden');
+              
+        };
+                
+        for(let i = 0; i < rubox.length; i++) {
+            rubox[i].classList.toggle('hidden');
+        };        
+        
+    } else {
+         if(event.target.id == 'ru') {
+            for(let i = 0; i < rubox.length; i++) {
+               console.log(rubox[i]) //rubox[i].classList.toggle('hidden');
+            }; 
+
+            for(let i = 0; i < enbox.length; i++) {
+                rubox[i].classList.toggle('hidden');
+            };
+         }
+    }
+}
  
- function funkEn(){
-    for(let i = 0; i <= rubox.length; i++) {
-        rubox[i].classList.toggle('hidden');
-    };   
-}
+//  function funkSwitch(){
+// let enbox = document.getElementsByClassName('en');
+//  let rubox = document.getElementsByClassName('ru');
 
-function funkRu(){
-    for(let i = 0; i <= enbox.length; i++) {
-        enbox[i].classList.toggle('hidden');
-    };  
-}
+//     for(let i = 0; i <= rubox.length; i++) {
+//         rubox[i].classList.toggle('hidden');
+//     };   
+//     document.getElementById('lan').innerHTML = 'en'
+  
+
+//     for(let i = 0; i <= enbox.length; i++) {
+//         enbox[i].classList.toggle('hidden');
+//     }; 
+    
+   
+// }
+
+
 
 
 

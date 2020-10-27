@@ -126,10 +126,16 @@ renderDropMenu('#dropdownbox');
 menubutton.addEventListener('click', showMenu);
 
 let element = document.getElementById('fall-menu');
-function showMenu() { 
+function showMenu(event) { 
     element.classList.toggle('dropdown-show');
     element.classList.toggle('dropdown-hide');
 }
+ 
+function funk(event){
+    console.log(event.target.id);
+}
+
+
 
 
 //------------Info header creation--------------------
