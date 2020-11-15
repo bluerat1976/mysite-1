@@ -1,8 +1,3 @@
-* {
-    padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
 
 #hd {
     display: flex;
@@ -19,6 +14,7 @@
         flex-flow: row nowrap;
         flex: 1 1 12%;
         align-items: flex-start;
+        border: 1px solid #cccccc;
 
         h3 {
             display: inline-block;
@@ -34,14 +30,16 @@
         }
 
         #dropdown {
-            position: relative;
+            display: none;
             border: 1px solid #d8d8d8;
 
             #menu-button {
                 display: inline-block;
                 font-family: 'Open sans', Roboto, Geneva, Verdana, sans-serif;
-                color: #11151a;
-                font-size: 16px;
+                color: #ffffff;
+                background-color: #055c7e;
+                font-size: 14px;
+                padding: 3px;
             }
             #fall-menu {
                 position: absolute;
@@ -75,12 +73,14 @@
         display: flex;
         flex-flow: row wrap;
         flex: 1 1 70%;
+        border: 1px solid #cccccc;
     
         #box-info {
             display: flex;
             flex-flow: row wrap;
             flex: 1 1 74%;
             justify-content: center;
+            border: 1px solid #cccccc;
 
             p {
                 color: #afafaf;
@@ -96,6 +96,7 @@
             flex: 1 1 74%;
             justify-content: center;
             align-items: flex-end;
+            border: 1px solid #cccccc;
            
             a {
                 @include upp-menu;
