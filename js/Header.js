@@ -52,6 +52,7 @@ let uppermenu = [
     new UpperMenuItem('uppnav4', 'Blog', 'blog.html'),
     new UpperMenuItem('uppnav4', 'Contacts', 'contacts.html'),
     new UpperMenuItem('uppnav5', 'CV', 'cv.html'),
+    new UpperMenuItem('upnav6', 'Auto Shop', 'auto-shop.html'),
 ]
 
 function renderUpNav() {
@@ -107,6 +108,7 @@ let dropdownMenu = [
     new dropdownLink('Blog', 'blog.html'),
     new dropdownLink('Contacts', 'contacts.html'),
     new dropdownLink('CV', 'cv.html'),
+    new dropdownLink('Auto Shop', 'auto-shop.html'),
 ]
 
 function renderDropMenu() {
