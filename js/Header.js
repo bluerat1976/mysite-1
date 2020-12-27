@@ -8,7 +8,7 @@ let upperNav = document.getElementById('nav-info')
 let boxlogo = document.getElementById('box-logo')
 
 let logo = document.createElement('h3')
-logo.innerHTML = 'Deghent' + '<br>' + 'Design'
+logo.innerHTML = 'Enote' + '<br>' + 'Design'
 boxlogo.appendChild(logo)
 
 
@@ -148,7 +148,7 @@ let boxInfoHeader = document.getElementById('box-info-header');
 
 let infoHead = document.createElement('p');
 infoHead.setAttribute('class', 'info-header');
-infoHead.innerHTML = '+373 (0) 78318392' + ' ' + ' --- ' + ' ' + 'lisadeghent@gmail.com';
+infoHead.innerHTML = '+373 (0) 78318392' + ' ' + ' --- ' + ' ' + 'info@enote.com';
 boxInfoHeader.appendChild(infoHead);
 
 
