@@ -64,7 +64,7 @@ function renderUpNav() {
     upperNav.appendChild(wrapper);
 }
 
-renderUpNav('#apperNav');
+renderUpNav('#upperNav');
 
 
 

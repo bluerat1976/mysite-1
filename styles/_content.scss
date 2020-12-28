@@ -1,7 +1,8 @@
 body {
     padding: 10px 0 0 0;
 
-    .content{
+    .content, 
+    #content-auto {
         padding: 30px;
        
         h1 {
@@ -41,8 +42,11 @@ body {
             margin-top: 20px;
         }
 
-        .autopieces-categories {
+        .autopieces-categories,
+        #parts-category {
             width: fit-content;
+            width: 200px;
+            height: 200px;
             border: 1px solid #253a44;
 
             a {
