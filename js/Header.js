@@ -19,10 +19,6 @@ boxlogo.appendChild(logo)
 
 // header.appendChild(boxlogo)
 
-
-
-
-
 //--------------------------------------------------------------------------
 //----------Main upper menu creation----------------------------------------
 
@@ -52,7 +48,8 @@ let uppermenu = [
     new UpperMenuItem('uppnav4', 'Blog', 'blog.html'),
     new UpperMenuItem('uppnav4', 'Contacts', 'contacts.html'),
     new UpperMenuItem('uppnav5', 'CV', 'cv.html'),
-    new UpperMenuItem('upnav6', 'Auto Shop', 'auto-shop.html'),
+    new UpperMenuItem('uppnav6', 'Auto Shop', 'auto-shop.html'),
+    new UpperMenuItem('uppnav7', 'Auto Categories', 'auto-cat.html'),
 ]
 
 function renderUpNav() {
@@ -65,7 +62,6 @@ function renderUpNav() {
 }
 
 renderUpNav('#upperNav');
-
 
 
 //------------- Falling menu creation-------------------------------
@@ -138,13 +134,9 @@ function funk(event){
 }
 
 
-
-
 //------------Info header creation--------------------
 
-
 let boxInfoHeader = document.getElementById('box-info-header');
-
 
 let infoHead = document.createElement('p');
 infoHead.setAttribute('class', 'info-header');
@@ -153,9 +145,6 @@ boxInfoHeader.appendChild(infoHead);
 
 
 //----------------Language change elements creation----------------
-
-
-
 
 
 

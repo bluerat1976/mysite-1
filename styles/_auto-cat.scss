@@ -1,7 +1,5 @@
-body {
-    padding: 10px 0 0 0;
 
-    .content {
+    #content-auto {
         padding: 30px;
        
         h1 {
@@ -40,5 +38,22 @@ body {
         h1{
             margin-top: 20px;
         }
+
+        #parts-category {
+            width: fit-content;
+            border: 1px solid #253a44;
+
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 6px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 20px;
+                color: #183138;
+            }
+            a:hover {
+                background-color: #325268;
+                color: #ffffff;
+            }
+        }
     }
-}
