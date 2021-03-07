@@ -6,8 +6,6 @@
     /*background:linear-gradient(#e2e3e4, #314458) ;*/
     background-image: url(picts/upmenu/up-background-11.jpg);
     background-size: cover;
-    height: 400px;
-  
  
     #box-logo {
         display: flex;
@@ -19,10 +17,10 @@
         h3 {
             display: inline-block;
             font-size: 32px;
-            padding: 10px; 
+            margin-left: 12%; 
+            margin-top: 10%;
             color: #ffe986;
             text-align: left;
-            border: 1px solid #ffe986;
         }
 
         #pict-logo {
@@ -31,15 +29,16 @@
 
         #dropdown {
             display: none;
-            border: 1px solid #d8d8d8;
+            
 
             #menu-button {
                 display: inline-block;
                 font-family: 'Open sans', Roboto, Geneva, Verdana, sans-serif;
                 color: #ffffff;
                 background-color: #055c7e;
-                font-size: 14px;
-                padding: 3px;
+                font-size: 18px;
+                padding: 8px;
+                margin-right: 10px;
             }
             #fall-menu {
                 position: absolute;

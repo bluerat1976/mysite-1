@@ -3,13 +3,10 @@
 //const { info } = require("node-sass")
 
 
-let upperNav = document.getElementById('nav-info')
 
-let boxlogo = document.getElementById('box-logo')
+let upperNav = document.getElementById('nav-info');
+let boxlogo = document.getElementById('box-logo');
 
-let logo = document.createElement('h3')
-logo.innerHTML = 'Enote' + '<br>' + 'Design'
-boxlogo.appendChild(logo)
 
 
 // let logopict = document.createElement('img')
@@ -64,7 +61,7 @@ function renderUpNav() {
 renderUpNav('#upperNav');
 
 
-//------------- Falling menu creation-------------------------------
+//------------- Dropdown menu creation-------------------------------
 
 let dropdownbox = document.createElement('div');
 dropdownbox.setAttribute('id', 'dropdown');
@@ -133,6 +130,14 @@ function funk(event){
     console.log(event.target.id);
 }
 
+//-------------/Dropdown menu creation---------------
+//-----------------Logo creation-----------------------------
+
+let logo = document.createElement('h3')
+logo.innerHTML = 'Radarius';
+boxlogo.appendChild(logo)
+
+//----------------/Logo creation---------------------------------
 
 //------------Info header creation--------------------
 
@@ -140,7 +145,7 @@ let boxInfoHeader = document.getElementById('box-info-header');
 
 let infoHead = document.createElement('p');
 infoHead.setAttribute('class', 'info-header');
-infoHead.innerHTML = '+373 (0) 78318392' + ' ' + ' --- ' + ' ' + 'info@enote.com';
+infoHead.innerHTML = 'info@radarius.com';
 boxInfoHeader.appendChild(infoHead);
 
 
