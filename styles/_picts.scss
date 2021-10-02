@@ -1,5 +1,6 @@
 body {
     .content {
+
         .pict-box-right, 
         .pict-box-left,
         .pict-box-center {
@@ -45,6 +46,8 @@ body {
             transition: all 0.3s linear; 
             z-index: 10;   
         }
+
+
         .box-portfolio {
             text-align: center;
         }
@@ -55,6 +58,7 @@ body {
             margin: 24px 4px;
             border: 1px solid #424242;
             cursor: pointer;
+            z-index: 0;
             
             .pict-content {
                 width: 100%;  
@@ -62,6 +66,59 @@ body {
             .single {
                 text-align: center;
                 padding: 4px;
+            }
+        }
+        #box-portfolio {
+            position: relative;
+        }
+        .pict-max {
+            position: fixed;
+            left: 100px;
+            top: 100px;
+            display: inline-block;
+            max-width: 500px!important;
+            z-index: 1 !important;
+            border: 3px solid #2c2b2b;
+        } 
+        .pict-content {
+            width: 100%;  
+        }
+        .single {
+            text-align: center;
+            padding: 4px;
+        }
+        .modal-box {
+            position: fixed;
+            width: 70%;
+            height: 600px;
+            border: 2px solid #2c2b2b;
+            background-color: #004a86;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    body {
+        .content {
+            .pict-box-right, 
+            .pict-box-left,
+            .pict-box-center {
+                max-width: 300px;
+            }
+            .pict-box-right:hover, 
+            .pict-box-left:hover,
+            .pict-box-center:hover {
+                transform: scale(1.4);
+                max-width: 100%;
+                transition: all 0.3s linear; 
+                z-index: 10;   
+            }
+
+            .pict-box-right:hover {
+                transform: scale(1.4) translate(-20px)
+            }
+            .pict-box-left:hover {
+                transform: scale(1.4) translate(20px)
             }
         }
     }

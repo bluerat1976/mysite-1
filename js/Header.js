@@ -6,6 +6,7 @@
 
 let upperNav = document.getElementById('nav-info');
 let boxlogo = document.getElementById('box-logo');
+let boxhd = document.getElementById('hd');
 
 
 
@@ -45,8 +46,7 @@ let uppermenu = [
     new UpperMenuItem('uppnav4', 'Blog', 'blog.html'),
     new UpperMenuItem('uppnav4', 'Contacts', 'contacts.html'),
     new UpperMenuItem('uppnav5', 'CV', 'cv.html'),
-    new UpperMenuItem('uppnav6', 'Auto Shop', 'auto-shop.html'),
-    new UpperMenuItem('uppnav7', 'Auto Categories', 'auto-cat.html'),
+    new UpperMenuItem('uppnav6', 'Auto Shop', 'http://auto-oc-2/index.php?route=common/home'),
 ]
 
 function renderUpNav() {
@@ -60,16 +60,18 @@ function renderUpNav() {
 
 renderUpNav('#upperNav');
 
+let newwind = document.getElementById('uppnav6');
+newwind.setAttribute('target', '_blank');
 
 //------------- Dropdown menu creation-------------------------------
 
 let dropdownbox = document.createElement('div');
 dropdownbox.setAttribute('id', 'dropdown');
-boxlogo.appendChild(dropdownbox);
+boxhd.appendChild(dropdownbox);
 
-boxlogo.appendChild(dropdownbox);
 
-let menubutton = document.createElement('button');
+
+let menubutton = document.createElement('div');
 menubutton.setAttribute('id','menu-button');
 menubutton.innerHTML = 'Menu';
 dropdownbox.appendChild(menubutton);

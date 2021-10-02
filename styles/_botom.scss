@@ -19,5 +19,11 @@
             color: #f5ed79;
         }
     }
-
 } 
+
+@media (max-width: 670px) {
+    #botom {
+        padding: 10px 18px;
+        margin: 12px 0 0 0;
+    }
+}

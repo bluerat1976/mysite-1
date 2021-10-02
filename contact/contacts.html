@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name="description" content="ADVERTURA наружная и внутрення реклама">
+    <meta name="keywords" content=".....................">
+    <meta name="autor" content="Tatiana Osoblivaia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mysyte-1</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--script src="js/index.js" type="text/javascript" defer></script-->
+    <script src="../js/Header.js" type="text/javascript" defer></script>
+    <script src="../js/Bottom.js" type="text/javascript" defer></script>
+</head>
+
+<body id="page-blog">
+
+    <div id='hd'>
+            <div id="box-logo">
+            </div>
+            <div class="form-pict">
+                <!--img class="pict-content" src="../picts/upmenu/baner-pict-2.jpg"-->
+                <form name="formcont" action="mail.php" method="POST">
+                <fieldset><legend>Ваш запрос</legend>
+                    <div><p>Your Name</p> <input type="text" value="<?php echo $name;?>" name="name"><p><?php echo $nameError;?></p></div>
+                    <div><p>Your e-mail</p> <input type="email" value="" name="email"><p><?php echo $emailError;?></p></div>
+                    <div><p>Your phone</p> <input type="tel" name="phone" value=""><p><?php echo $phoneError;?></p></div>
+                    <div><p>Your message</p><textarea name="message" id="" rows="6" value=""></textarea><p><?php echo $messageError;?></p></div>
+                    <input class="btn-send" type="submit" value="Send">
+                </fieldset> 
+                </form>
+            <div id="box-nav">   
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Contacts</h1>
+        <div class="form-pict">
+      
+            <img class="pict-content" src="../picts/upmenu/baner-pict-2.jpg">
+        
+            <form name="formcont" action="mail.php" method="POST">
+                <fieldset><legend>Ваш запрос</legend>
+                   <div class="form-inp"> <p>Your Name</p> <input type="text" value=""></div>
+                    <div class="form-inp"><p>Your e-mail</p> <input type="email" value=""></div>
+                    <div class="form-inp"><p>Your phone</p> <input type="tel" name="tel" id="" value=""></div>
+                   <div class="form-inp"><p>Your message</p><textarea name="" id="" rows="6" value=""></textarea></div>
+                    <input class="btn-send" type="submit" value="Send">
+            </fieldset> 
+            </form>
+        </div>
+        <br>
+        <p>
+            Odio euismod lacinia at quis risus sed. Leo vel orci porta non 
+            pulvinar neque laoreet suspendisse. Cras sed felis eget velit 
+            aliquet sagittis id consectetur purus. Et netus et malesuada 
+            fames. Platea dictumst vestibulum rhoncus est pellentesque elit 
+            ullamcorper. Cursus euismod quis viverra nibh. Eleifend donec 
+            pretium vulputate sapien nec. Vitae sapien pellentesque habitant 
+            orbi tristique senectus et netus. Massa vitae tortor condimentum 
+            lacinia quis vel eros donec. Quam pellentesque nec nam aliquam sem 
+            et tortor consequat. Tristique risus nec feugiat in. Malesuada 
+            pellentesque elit eget gravida cum sociis natoque penatibus et. 
+            Scelerisque viverra mauris in aliquam sem fringilla ut. Eget nullam 
+            non nisi est. Erat imperdiet sed euismod nisi. Amet mattis vulputate 
+            enim nulla aliquet porttitor lacus luctus. Turpis egestas pretium 
+            aenean pharetra magna ac placerat vestibulum lectus. Orci nulla 
+            pellentesque dignissim enim sit amet venenatis urna. Facilisis gravida 
+            neque convallis a.
+        </p>
+       
+      
+</body>
+
+</html>

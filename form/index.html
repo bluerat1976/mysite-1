@@ -1,0 +1,52 @@
+﻿<link rel="stylesheet" type="text/css" href="style.css"/>
+
+
+<title>Ôîðìà îáðàòíîé ñâÿçè â ìîäàëüíîì îêíå</title>
+</head>
+
+<body>
+
+			
+			<a id="mylogo" href="/blog" alt="âåá-äèçàéí áëîã"></a>
+			
+				<div id="formbox">			
+	<form action="send.php" method="POST">
+		<p></p> <input type="text" name="name"/> 
+		<p>Email</p> <input type="text" name="email"/>
+		<p>Phone</p> <input type="text" name="phone"/>
+	 
+	<p>Íåîáõîäèì ëè òåëåôîííûé çâîíîê?</p>
+		 Äà<input class="w20"  type="radio" name="call" value="Äà"><br/>
+		 Íåò<input  class="w20" type="radio" name="call" value="Íåò"><br/>
+		
+	<p>Ñïîñîá ñâÿçè</p><!--Ôëàæêè-->
+		Email<input class="w20" type="checkbox" value="mail" name="connect[]"/><br />
+		Òåëåôîí<input  class="w20" type="checkbox" value="Òåëåôîí" name="connect[]"/><br />
+
+	<p>Ñàéò</p> <input type="text" name="website">
+
+	<p>Âàæíîñòü</p>
+		<select name="priority" size="1">
+			<option value="Íèçêàÿ">Íèçêàÿ</option>
+			<option value="Íîðìàëüíàÿ">Íîðìàëüíàÿ</option>
+			<option value="Âûñîêàÿ">Âûñîêàÿ</option>
+			<option value="Ìàêñèìàëüíàÿ">Ìàêñèìàëüíàÿ</option>
+		</select>
+	<br />
+	
+	<p>Òèï</p> 
+		<select name="type" size="1">
+		<option value="Îáíîâëåíèå ñàéòà">Îáíîâëåíèå ñàéòà</option>
+		<option value="Èçìåíåíèå èíôîðìàöèè">Èçìåíåíèå èíôîðìàöèè</option>
+		<option value="Èíôîðìàöèÿ äîáàâëåíà">Èíôîðìàöèÿ äîáàâëåíà</option>
+		<option value="Íîâûå ïðîäóêòû">Íîâûå ïðîäóêòû</option>
+		</select>
+	<br />
+	 
+	<p>Ñîîáùåíèå</p><textarea name="message" rows="6" cols="25"></textarea><br />
+		<input type="submit" class="w150" value="Îòïðàâèòü"/><input type="reset" value="Î÷èñòèòü" class="w150"/>
+	</form>
+</div>
+
+</body>
+</html>

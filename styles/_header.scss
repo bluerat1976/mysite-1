@@ -3,16 +3,16 @@
     display: flex;
     flex-flow: row wrap;
     border-bottom: 2px solid #2c3b41; 
-    /*background:linear-gradient(#e2e3e4, #314458) ;*/
-    background-image: url(picts/upmenu/up-background-11.jpg);
+    background:linear-gradient(#1e87ad, #145e7a) ;
+    background-image: url(picts/upmenu/IMG_20180703_205154-1.jpg);
     background-size: cover;
+    height: 200px;
  
     #box-logo {
         display: flex;
         flex-flow: row nowrap;
         flex: 1 1 12%;
         align-items: flex-start;
-        border: 1px solid #cccccc;
 
         h3 {
             display: inline-block;
@@ -26,65 +26,64 @@
         #pict-logo {
             max-width: 60%;
         }
+    }
+    #dropdown {
+        display: none;
 
-        #dropdown {
+        #menu-button {
+            display: inline-block;
+            font-family: 'Open sans', Roboto, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            background-color: #21282b;
+            font-size: 14px;
+            padding: 6px;
+        }
+        #fall-menu {
+            position: absolute;
+            border: 1px solid #ffe986;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px #d8d8d8;
+            background-color: #131416;
+            z-index: 10;
+        }
+
+        .dropdown-hide {
             display: none;
-            
+        }
 
-            #menu-button {
-                display: inline-block;
+        .dropdown-show {
+            display: block;
+
+            a {
+                display: block;
+                padding: 6px;
                 font-family: 'Open sans', Roboto, Geneva, Verdana, sans-serif;
                 color: #ffffff;
-                background-color: #055c7e;
-                font-size: 18px;
-                padding: 8px;
-                margin-right: 10px;
-            }
-            #fall-menu {
-                position: absolute;
-                border: 1px solid #ffe986;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px #d8d8d8;
-                background-color: #131416;
-                z-index: 10;
+                text-decoration: none;
             }
 
-            .dropdown-hide {
-                display: none;
-            }
-
-            .dropdown-show {
-                display: block;
-
-                a {
-                    display: block;
-                    padding: 6px;
-                    font-family: 'Open sans', Roboto, Geneva, Verdana, sans-serif;
-                    color: #ffffff;
-                    text-decoration: none;
-                }
-
-            }
         }
     }
 
     #nav-info {
         display: flex;
         flex-flow: row wrap;
-        flex: 1 1 70%;
-        border: 1px solid #cccccc;
+        flex: 1 1 70%;  
     
         #box-info {
             display: flex;
             flex-flow: row wrap;
             flex: 1 1 74%;
             justify-content: center;
-            border: 1px solid #cccccc;
 
             p {
-                color: #afafaf;
-                margin-top: 20px;
-                font-size: 18px;
+                color: #ececec;
+                background-color: black;
+                opacity: 0.7;
+                padding: 6px;
+                margin-top: 6px;
+                margin-bottom: 20px;
+                font-size: 16px;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
         }
@@ -95,7 +94,7 @@
             flex: 1 1 74%;
             justify-content: center;
             align-items: flex-end;
-            border: 1px solid #cccccc;
+          
            
             a {
                 @include upp-menu;
@@ -117,11 +116,53 @@
 
         } 
         
-    }
-
-    
+    }   
 }  
 
+@media (max-width: 1065px) {
+    
+    #hd {
+        #nav-info {
+            #box-nav {
+                a {
+                    margin: 4px 6px 0 12px;
+                    padding: 4px 4px;
+                    font-size: 16px; 
+                }
+            }
+        }
+    }           
+}
+@media (max-width: 670px) {
+
+    #hd {
+        height: auto;
+        #box-logo {
+            h3 {
+                font-size: 22px;
+                padding: 6px;
+                margin-left: 22%;
+                margin-top: 0%;
+            } 
+        }
+        #dropdown {
+            display: block;
+            position: fixed;
+            z-index: 100;
+        }
+        #nav-info {
+            display: none; 
+        }
+        #switch-lang {
+            margin: 0 6px;
+            right: 8px;
+            a {
+                margin: 0;
+                padding: 3px;
+            }
+        }
+    }
+}
 
 
 

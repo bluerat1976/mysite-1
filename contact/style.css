@@ -1,0 +1,72 @@
+#page-blog {
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hd {
+    border-bottom: 3px solid #192e31;
+    border-top: 3px solid #192e31;
+    position: relative;
+    height: 460px;
+    background-image: url(../picts/upmenu/baner-pict-2.jpg);
+}
+
+#hd .form-pict {
+    top: 4%;
+}
+
+
+.form-pict {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pict-content {
+    display: inline-block;
+    max-width: 100%;  
+}
+
+form {
+  position:absolute;
+    top: 4%;
+    width: 40%;
+    margin-left: 2%;
+    background-color: rgba(49, 77, 82, 0.705);
+   
+}
+form .form-inp {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+form input, form textarea, form set {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+fieldset legend {
+    color: rgb(255, 253, 130);
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+fieldset p {
+    margin-bottom: 4px;
+    color: rgb(252, 255, 223);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.btn-send {
+    margin-top: 20px;
+    max-width: 30%;
+    background-color: #ce1414;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 8px;
+}

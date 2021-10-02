@@ -1,0 +1,28 @@
+.header-box {
+    max-width: 100%;
+    position: relative;
+}
+.header-box img {
+    max-width: 100%;
+}
+.form-container {
+    position: absolute;
+    top: 3%;
+    z-index: 100;
+    border: 1px solid #cccccc;
+    margin-left: 4%;
+   
+   
+}
+
+.form-control {
+    max-width: 250px;
+    margin: 4px;
+}
+
+#form-con {
+   max-width: 350px !important;
+}
+#contact_form {
+    max-width: 70% !important;
+}
